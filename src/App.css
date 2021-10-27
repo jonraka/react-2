@@ -1,0 +1,79 @@
+body, button {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 900px;
+    text-align: center;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+.py-100{
+    padding: 100px 0;
+}
+
+.smallCardsList {
+    display: flex;
+    margin: 0 auto;
+}
+
+.smallCard img {
+    height: 250px
+}
+
+.smallCard {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.biggerCardsList {
+    display: flex;
+}
+
+.spacing {
+    margin-bottom: 50px;
+}
+
+.bigCard {
+    margin: 0 5px;
+    background-color: black;
+    width: 250px;
+    color: white;
+    text-align: left;
+    padding: 20px;
+}
+
+.bigCard :nth-child(2){
+    color: rgb(207, 207, 207);
+    font-weight: bold;
+}
+
+.bigCard :nth-child(3){
+    color: rgb(146, 146, 146);
+    font-size: 0.8rem;
+}
+
+.bigCard button {
+    padding: 10px;
+    border: none;
+}
+
+.bigCard button:hover {
+    background-color: red;
+}
+
+button {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.bg-something {
+    background-color: rgb(126, 126, 126);
+}
