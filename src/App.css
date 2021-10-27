@@ -77,3 +77,18 @@ button {
 .bg-something {
     background-color: rgb(126, 126, 126);
 }
+
+.tags {
+    text-align: center;
+}
+
+.tags > span {
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+}
+
+.tags > span.selected {
+    background-color: black;
+    color: white;
+}
