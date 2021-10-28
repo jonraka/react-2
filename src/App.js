@@ -1,8 +1,8 @@
-import './App.css';
 import React from 'react';
 import BandInfoBlock from './components/BandInfoBlock';
 import TourDatesBlock from './components/TourDatesBlock';
 import TagsBlock from './components/TagsBlock';
+import NavBarBlock from './components/NavBarBlock';
 
 const title = 'The Band';
 const description = 'We Love Music';
@@ -49,12 +49,31 @@ const toursData = [
     },
 ];
 
+const links = [
+    {
+        id: 1,
+        href: 'index.html',
+        text: 'Home'
+    },
+    {
+        id: 2,
+        href: 'about.html',
+        text: 'About'
+    },
+    {
+        id: 3,
+        href: 'contact.html',
+        text: 'Contact'
+    },
+];
+
 export default function App() {
     return (
         <main>
+            <NavBarBlock links={links}/>
             <BandInfoBlock title={title} description={description} paragraph={paragraph} bandData={bandData} />
             <TourDatesBlock toursData={toursData} />
-            <TagsBlock selectedTags={['News', 'Clothing']}/>
+            <TagsBlock selectedTags={['News', 'Clothing']} />
         </main>
     );
 }

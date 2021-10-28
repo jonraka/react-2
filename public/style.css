@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body, button {
     font-family: sans-serif;
     margin: 0;
@@ -10,8 +16,7 @@ body, button {
 }
 
 img {
-    width: 250px;
-    height: 250px;
+    width: 100%;
 }
 
 .py-100{
@@ -20,7 +25,11 @@ img {
 
 .smallCardsList {
     display: flex;
-    margin: 0 auto;
+    margin: 100px auto;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
 }
 
 .smallCard img {
@@ -35,6 +44,7 @@ img {
 
 .biggerCardsList {
     display: flex;
+    justify-content: center;
 }
 
 .spacing {
@@ -91,4 +101,27 @@ button {
 .tags > span.selected {
     background-color: black;
     color: white;
+}
+
+a, a:visited, a:active {
+    color: white;
+    background-color: black;
+    padding: 0 5px;
+    display: inline-block;
+
+}
+
+a:hover, a:visited:hover, a:active:hover {
+    background-color: white;
+    color: black;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+}
+
+.navbar a {
+    padding: 5px;
+    margin-left: 5px;
 }
